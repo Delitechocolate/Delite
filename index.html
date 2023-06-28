@@ -1,1 +1,60 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v1_2"><span class="v1_4">En Construcción...</span><div class="v1_5"></div></div></body></html>
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Versión 1 -->
+    <div class="version v1_2">
+      <span class="v1_4">En Construcción...</span>
+      <div class="v1_5"></div>
+    </div>
+
+    <!-- Versión 2 -->
+    <div class="version v5_6">
+      <span class="v5_7">En Construcción...</span>
+      <div class="v5_8"></div>
+    </div>
+
+    <!-- Versión 3 -->
+    <div class="version v5_9">
+      <span class="v5_10">En Construcción...</span>
+      <div class="v5_11"></div>
+    </div>
+  </div>
+
+  <script>
+    // Función para detectar el tamaño de la pantalla y cargar la versión correspondiente
+    function loadResponsiveVersion() {
+      var screenWidth = window.innerWidth;
+      var versionElements = document.getElementsByClassName("version");
+
+      // Ocultar todas las versiones
+      for (var i = 0; i < versionElements.length; i++) {
+        versionElements[i].style.display = "none";
+      }
+
+      // Versión para pantallas pequeñas (hasta 400px)
+      if (screenWidth <= 400) {
+        document.getElementsByClassName("v5_9")[0].style.display = "block";
+      }
+      // Versión para pantallas medianas (401px - 1280px)
+      else if (screenWidth >= 401 && screenWidth <= 1280) {
+        document.getElementsByClassName("v5_6")[0].style.display = "block";
+      }
+      // Versión para pantallas grandes (1281px en adelante)
+      else {
+        document.getElementsByClassName("v1_2")[0].style.display = "block";
+      }
+    }
+
+    // Cargar la versión correspondiente al cargar la página y al cambiar el tamaño de la ventana
+    window.onload = loadResponsiveVersion;
+    window.onresize = loadResponsiveVersion;
+  </script>
+</body>
+</html>
