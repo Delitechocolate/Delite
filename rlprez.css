@@ -17,6 +17,41 @@
 #lqMz5QfJ {
 	-webkit-tap-highlight-color: transparent;
 }
+@font-face{
+    font-family: 'Apple Chancery';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Apple Chancery'),
+         url('resources/font_0.woff');
+}
+@font-face{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial'),
+         url('resources/font_1.woff');
+}
+@font-face{
+    font-family: 'Chalkboard SE';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Chalkboard SE'),
+         url('resources/font_2.woff');
+}
+@font-face{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tahoma'),
+         url('resources/font_3.woff');
+}
+@font-face{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Times New Roman'),
+         url('resources/font_4.woff');
+}
 
 
 
