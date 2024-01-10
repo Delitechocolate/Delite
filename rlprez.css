@@ -39,25 +39,18 @@
          url('resources/font_2.woff');
 }
 @font-face{
-    font-family: 'Snell Roundhand';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Snell Roundhand'),
-         url('resources/font_3.woff');
-}
-@font-face{
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
     src: local('Tahoma'),
-         url('resources/font_4.woff');
+         url('resources/font_3.woff');
 }
 @font-face{
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
     src: local('Times New Roman'),
-         url('resources/font_5.woff');
+         url('resources/font_4.woff');
 }
 
 
